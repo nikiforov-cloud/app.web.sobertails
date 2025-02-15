@@ -1,0 +1,35 @@
+.Navbar {
+  background-color: #222;
+  padding: 1rem;
+  min-width: 320px;
+
+  a {
+    display: list-item;
+    list-style: none;
+    padding: 1rem 1.5rem;
+    background-color: #444;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+    transition: background-color 0.25s ease;
+
+    &:not(:last-child) {
+      margin: 0 0 0.5rem;
+    }
+
+    &:hover {
+      background-color: #555;
+    }
+
+    &.active {
+      background-color: #f39c12;
+      color: #000;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    min-height: 100vh;
+  }
+}
